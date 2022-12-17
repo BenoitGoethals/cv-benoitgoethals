@@ -1,39 +1,68 @@
 <!DOCTYPE html>
 <html>
 <style>
-table, th, td {
-  border:1px solid black;
-}
+  table,
+  th,
+  td {
+    border: 1px solid black;
+  }
 </style>
+
 <body>
 
-<H1>Benoit Goethals</H1>
+  <H1>Benoit Goethals</H1>
 
-<table style="width:100%">
-  <tr >
-    <th style="width:25%" >Opdracht</th>
+  <table style="width:100%" >
+    <tr>
+      <th style="width:25%">Opdracht</th>
+      <th style="width:25%">Oplossing </th>
+      <th style="width:50%">Extra</th>
+    </tr>
+    <tr style="vertical-align:top">
+      <td > Probeer bij het bouwen van jouw
+        oplossing toekomstige scalability & high availability in het achterhoofd te houden.
+        Kies voor de meest kostefficiënte oplossing en bereken tevens wat het zou kosten om de website
+        gedurende één maand te laten draaien.</td>
+      <td>Statisch site eist geen vertitale, horizontale scaling. Loadbalancer zou kunnen indien plots request te groot
+        worden. Requirements eisen geen uitbreidbaarheid naar application container. Basic plan voor static web is
+        genoeg. Gekoppeld aan github, dit voor een beter versioning van CV doc. Ik heb dus gekozen voor een free plan.
+
+       </td>
+      <td><img src="Screenshot_20221217_085836.png" style="width:100;height:100;" alt="prijs"></td>
+    </tr>
+    <tr style="vertical-align:top">
+      <td>Publieke cloud een database voor een type database (MySQL, MariaDB, Microsoft SQL,
+        PostgreSQL, …). Verbinden via een webeditor, via een cloud shell
+        Kies voor de meest kostefficiënte oplossing en bereken tevens wat het zou kosten om de database
+        gedurende één maand te laten draaien.</td>
+      <td>Ik heb gkozen voor de azure flexibel MYSQL container en een container ingespoeld met docker PHPMYADMIN
+        Dit heeft flexibiliteit voor te verbinden lang ssh op DB of met webeditor langs PHPMYADMin.
+
+      </td>
+      <td>
+        <img src="Screenshot_20221217_101622.png" style="width:100;height:100;" alt="prijs">
+      </td>
+    </tr>
+    <tr style="vertical-align:top">
+      <td>Publieke gamserver hosten op goedkope manier. poort 27910</td>
+      <td>
+        Oplossing is een ubuntu server met min aan resource. Standard B1ms, 2gb ram 1cpu
+        Inspoelen van quake server 
+        <a href="https://linuxgsm.com/servers/q2server/">quakeserver</a>
+        Deze oplossing heeft een console applicatie op terminal om te monitoren
+
+        SSH voor connectie met server
+      </td>
+      <td>
+        <img src="Screenshot_20221217_103023.png" style="width:100;height:100;" alt="prijs">
+      </td>
+    </tr>
+  </table>
+
+  <p>
    
-    <th  style="width:40%">Oplossing </th>
-     <th  style="width:25%">prijs</th>
-  </tr>
-  <tr>
-    <td> Probeer bij het bouwen van jouw
-oplossing toekomstige scalability & high availability in het achterhoofd te houden.
-Kies voor de meest kostefficiënte oplossing en bereken tevens wat het zou kosten om de website
-gedurende één maand te laten draaien.</td>
-    <td>Statisch site eist geen vertitale, horizontale scaling. Loadbalancer zou kunnen indien plots request te groot worden. Requirements eisen geen uitbreidbaarheid naar application container. Basic plan voor static web is genoeg. Gekoppeld aan github, dit voor een beter versioning van CV doc </td>
-    <td><img src="Screenshot_20221217_085836.png" style="width:50;height:100px;" alt="prijs"></td>
-  </tr>
-  <tr>
-    <td>Centro comercial Moctezuma</td>
-    <td>Francisco Chang</td>
-    <td>Mexico</td>
-  </tr>
-</table>
-
-<p> 
-<a href="https://linuxgsm.com/servers/q2server/">quakeserver</a>
-</p>
+  </p>
 
 </body>
+
 </html>
